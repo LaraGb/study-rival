@@ -29,27 +29,11 @@ export default function StylizedButton({children, isBgHighlighted, onClick}:styl
 }
 
 const Container = styled.button<Omit<stylizedBttuonT,'children'>>`
-  padding: 4px 6px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  color: ${({theme})=>theme.color.text.main || 'white'};
+  background-color: transparent;
+  color:white;
   font-weight: 600;
-  background: transparent;
-  box-shadow: ${({isActive})=>(
-    isActive
-    ?''
-    :'-4px -4px 4px 0px rgba(58, 68, 93, 0.50), 4px 4px 4px 0px #060c1852;'
-  )};
+  border-radius: 20px;
+  padding: 1.4rem 2.4rem;
+  border: 1px solid white;
   cursor: pointer;
-
-  &:active{
-    box-shadow: inset 5px 5px 9px #282424, inset -5px -5px 9px #484545;
-  }
-
-  &>div{
-    border-radius: 4px;
-    padding: 8px 10px;
-  }
-      
 `;

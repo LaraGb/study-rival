@@ -5,6 +5,7 @@ type paragraphT = {
   children: string;
   fontSize?: string,
   fontWeight?: string | number;
+  textAlign?:string;
   color?:string;
 }
 
@@ -17,9 +18,10 @@ export default function Paragraph({children,...styleProps}:paragraphT) {
 }
 
 const Container = styled.p<Omit<paragraphT,'children'>>`
-  font-size: ${({fontSize})=> fontSize || '1.6rem'};
+  max-width: 90%;
+  font-size: ${({fontSize})=> fontSize || '1.4rem'};
   font-weight: ${({fontWeight})=> fontWeight || 'normal'};
-  color:${({theme,color})=>{
-     return color?color:theme.color.text.label?theme.color.text.label:'#71717A'
-  }};
+  text-align: ${({textAlign})=> textAlign || 'left'};
+  line-height: 24px;
+  font-weight: 400;
 `;

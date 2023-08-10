@@ -4,13 +4,14 @@ import WideWrapping from "../../shared/components/global/wide-wrapping/WideWrapp
 import RowToColumn from "../../shared/components/global/row-to-column/RowToColumn";
 import OptionsField from "./components/options-field/Index";
 import ProgressField from "./components/ProgressField";
+import Logo from "../../shared/components/global/logo/Logo";
 
 export default function Index() {
   return (
     <ColumnContainer>
-      <div>
-
-      </div>
+      <WideWrapping>
+    
+      </WideWrapping>
       <Main>
          <WideWrapping>
            <RowToColumn>

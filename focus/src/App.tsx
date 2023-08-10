@@ -1,12 +1,12 @@
-import Main from "./pages/home/Index";
 import GlobalStyle from "./styles/GlobalStyle";
+import Landing from "./pages/landing/Index"
 
 function App() {
   return (
-    <>
+    <div>
      <GlobalStyle/>
-     <Main/>
-    </>
+     <Landing/>
+    </div>
   );
 }
 

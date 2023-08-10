@@ -1,19 +1,14 @@
 
 const pageTheme = {
     color: {
-      background: "#33383D",
+      background: "#0D0D0D",
       text:{
-        main:"#E4E4E7",
-        sub:"#A1A1AA",
-        label:"#71717A",
-        page:"#71717A"
+        main:"#F5FBF2",
+        page:"#939393"
       },
       details:{
         primary:{
-          base:"#0affee",
-        },
-        secondary:{
-          base:"#06B6D4"
+          base:"#FDB600",
         }
       }
       
@@ -24,7 +19,7 @@ const pageTheme = {
       style: "2px solid #736681",
     },
     measures:{
-       wide_wrapping:"1224px"
+       wide_wrapping:"1280px"
     },
     font: {
       small: "0.5rem",
@@ -32,9 +27,7 @@ const pageTheme = {
       big: "2rem",
       bigger: "3rem",
     },
-    shadow:{
-      neumorphic_shadow : "-4px -4px 4px 0px rgba(58, 68, 93, 0.50), 4px 4px 4px 0px #060c1852"
-    }
+    
   };
   
   export default pageTheme;

@@ -13,12 +13,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Inter', sans-serif;
-    border-radius: 0px;
-    background: linear-gradient(180deg, #383838, #16171B 100%);
-    color: ${pageTheme.color.text.label};
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    background-color:black;
+    color: ${pageTheme.color.text.page};
+  }
 
-  
+  a{
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  ul{
+    list-style: none;
   }
 `;
 
