@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
     background-color:black;
     color: ${pageTheme.color.text.page};

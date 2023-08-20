@@ -6,6 +6,7 @@ type ColumnT = {
   width?:string;
   maxWidth?:string;
   alignItems?:string;
+  padding?:string;
   gap?:string;
 }
 
@@ -23,6 +24,7 @@ const Container = styled.div<Omit<ColumnT,'children'>>`
  display: flex;
  flex-direction: column;
  align-items: ${({alignItems})=>alignItems || 'normal'};
+ padding: ${({padding})=>padding || 0};
 
  &>*:not(:first-child){
     margin-top:${({gap})=>gap || '10px'}

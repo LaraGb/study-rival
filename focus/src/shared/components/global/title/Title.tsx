@@ -1,12 +1,9 @@
-import React from "react";
-import { styled } from "styled-components";
+import React from 'react'
 
-export default function Title({ children }: { children: React.ReactNode }) {
-  return <Container>{children}</Container>;
+export default function Title() {
+  return (
+    <div>
+      
+    </div>
+  )
 }
-
-const Container = styled.div`
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: ${({theme})=>theme.color.text.main};
-`;

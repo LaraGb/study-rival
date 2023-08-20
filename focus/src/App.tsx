@@ -1,11 +1,12 @@
 import GlobalStyle from "./styles/GlobalStyle";
-import Landing from "./pages/landing/Index"
+import Study from "./pages/study/Index";
+
 
 function App() {
   return (
     <div>
      <GlobalStyle/>
-     <Landing/>
+     <Study/>
     </div>
   );
 }

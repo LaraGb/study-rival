@@ -29,11 +29,9 @@ export default function StylizedButton({children, isBgHighlighted, onClick}:styl
 }
 
 const Container = styled.button<Omit<stylizedBttuonT,'children'>>`
-  background-color: transparent;
-  color:white;
-  font-weight: 600;
-  border-radius: 20px;
-  padding: 1.4rem 2.4rem;
-  border: 1px solid white;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: none;
   cursor: pointer;
 `;

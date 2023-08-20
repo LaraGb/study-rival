@@ -3,8 +3,11 @@ import { styled } from 'styled-components';
 
 type spanT = {
    children: React.ReactNode;
-   borderColor?:string;
+   backgroundColor?:string;
    padding?:string;
+   fontSize?:string;
+   fontWeight?:string;
+   margin?:string;
 }
 
 export default function Span({children,...stylePros}:spanT) {
@@ -15,7 +18,11 @@ export default function Span({children,...stylePros}:spanT) {
   )
 }
 
-const Container = styled.div<Omit<spanT,'children'>>`
-  border: ${({borderColor})=>`1px solid ${borderColor}` || 'none'};
+const Container = styled.span<Omit<spanT,'children'>>`
+  margin: ${({margin})=>margin || '0'};
   padding:${({padding})=>padding };
+  font-size: ${({fontSize})=>fontSize || '1.4rem'};
+  word-break:break-all;
+  font-weight:${({fontWeight}) => fontWeight || 'normal'};
+  background-color:${({backgroundColor})=>backgroundColor || 'transparent'};
 `;
