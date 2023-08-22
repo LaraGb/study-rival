@@ -1,13 +1,12 @@
 import GlobalStyle from "./styles/GlobalStyle";
-import Study from "./pages/study/Index";
-
+import Route from "./router/Index";
 
 function App() {
   return (
-    <div>
-     <GlobalStyle/>
-     <Study/>
-    </div>
+    <>
+      <GlobalStyle />
+      <Route />
+    </>
   );
 }
 

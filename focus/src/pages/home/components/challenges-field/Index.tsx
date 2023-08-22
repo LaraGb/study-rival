@@ -16,7 +16,7 @@ export default function Index() {
         <StylizedButton>Pedidos</StylizedButton>
       </Row>
       <div>
-        <input type="text" />
+        <input/>
       </div>
       <Column alignItems='center' width='80%'>
         <Scroll>

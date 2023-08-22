@@ -5,6 +5,7 @@ import styled from "styled-components";
 import TaskList from "../task-list/Index";
 import TimeField from "../timer-field/Index";
 import ChallengeField from "../challenges-field/Index";
+import EvolutionField from "../evolution-field/Index";
 
 const cards = [
   {
@@ -25,6 +26,12 @@ const cards = [
     subTitle: "Incentive e Desafie Seus Amigos",
     Component: ChallengeField,
   },
+  {
+    id:3,
+    title:'Archieve',
+    subTitle:'',
+    Component:EvolutionField
+  }
 ];
 
 export default function Index() {
