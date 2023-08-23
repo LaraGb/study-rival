@@ -3,8 +3,8 @@ const pageTheme = {
     color: {
       background: "#0D0D0D",
       text:{
-        main:"#34313a",
-        page:"#4e4a57"
+        main:"white",
+        page:"#cdcccf"
       },
       details:{
         primary:{

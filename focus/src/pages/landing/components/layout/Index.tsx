@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
-import Footer from 'shared/components/global/footer/Footer';
+import Footer from 'shared/components/layout/footer/Footer';
 import styled from 'styled-components';
 
 export default function Index({children}:{children?:React.ReactNode}) {

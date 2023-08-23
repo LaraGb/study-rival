@@ -1,11 +1,19 @@
-import React from 'react';
-import CheckList from './check-list/Index';
-import TasksField from './tasks-field/Index';
+import React from "react";
+import TasksField from "./tasks-field/Index";
+import TabField from "shared/components/global/tab-field/TabField";
+
+const tabs = [
+  {
+    id: 0,
+    label: "Suas Tarefas",
+    Component: <TasksField />,
+  },
+];
 
 export default function Index() {
   return (
-    <div>
-      <TasksField/>
-    </div>
-  )
+    <>
+      <TabField tabs={tabs} />
+    </>
+  );
 }

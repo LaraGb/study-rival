@@ -1,10 +1,12 @@
 import React from 'react'
 import Column from 'shared/components/global/column/Column'
-import Scroll from 'shared/components/global/scroll/Scroll';
+import Scroll from 'shared/components/global/scroll-box/ScrollBox';
 import StylizedButton from 'shared/components/global/stylized-button/StylizedButton'
 import Row from 'shared/components/global/row/Row';
 import CircularImage from 'shared/components/global/circular-image/CircularImage';
 import Span from 'shared/components/global/span/Span';
+import TabField from 'shared/components/global/tab-field/TabField';
+
 
 
 export default function Index() {
