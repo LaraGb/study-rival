@@ -3,7 +3,7 @@ import styled from "styled-components";
 import WideWrapping from "../../../../../shared/components/global/wide-wrapping/WideWrapping";
 import Logo from "../../../../../shared/components/global/logo/Logo";
 import Row from "../../../../../shared/components/global/row/Row";
-import sectionList from "../../../section_list/sectionList";
+import sectionList from "pages/landing/section-list/sectionList";
 import { Link } from "react-scroll";
 
 export default function Navbar() {

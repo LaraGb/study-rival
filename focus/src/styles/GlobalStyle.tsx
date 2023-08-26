@@ -15,8 +15,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
-    background-color:black;
+    background:linear-gradient(175deg,#500dbd, #180339);
     color: ${pageTheme.color.text.page};
+    
   }
 
   a{

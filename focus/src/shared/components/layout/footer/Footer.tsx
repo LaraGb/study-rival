@@ -1,5 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 
 export default function Footer() {
-  return <div></div>;
+  return <Container></Container>;
 }
+
+
+const Container = styled.div`
+ height: 260px;
+ background-color: black;
+`;

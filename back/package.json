@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx ./src --exec \"ts-node\" ./src/index.ts",
-    "test": "tsx --watch \"jest\"",
+    "dev": "tsx ./src",
+    "test": "jest",
     "build": "tsc"
   },
   "standard": {

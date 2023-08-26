@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import WideWrapping from '../wide-wrapping/WideWrapping';
 
+
+
+
 export default function Container({children}:{children:React.ReactNode}) {
   return (
     <ContainerField>
@@ -14,9 +17,10 @@ export default function Container({children}:{children:React.ReactNode}) {
 
 
 const ContainerField = styled.div`
-  padding: 10rem 0rem;
-  min-height: 70vh;
+  padding: 4rem 0rem;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
 `;

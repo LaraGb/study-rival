@@ -21,7 +21,7 @@ const Container = styled.p<Omit<paragraphT,'children'>>`
   max-width: 90%;
   letter-spacing: 2px;
   color:${({color})=> color || 'currentColor'};
-  font-size: ${({fontSize})=> fontSize || '1.4rem'};
+  font-size: ${({fontSize})=> fontSize || '1.5rem'};
   font-weight: ${({fontWeight})=> fontWeight || 'normal'};
   text-align: ${({textAlign})=> textAlign || 'left'};
   line-height: 24px;
