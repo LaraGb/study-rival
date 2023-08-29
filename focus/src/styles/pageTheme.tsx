@@ -3,7 +3,7 @@ const pageTheme = {
     color: {
       text:{
         main:"white",
-        page:"#cdcccf"
+        page:"white"
       },
       details:{
         primary:{
@@ -18,7 +18,7 @@ const pageTheme = {
       style: "2px solid #736681",
     },
     measures:{
-       wide_wrapping:"1420px"
+       wide_wrapping:"1720px"
     },
     font: {
       small: "0.5rem",

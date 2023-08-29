@@ -10,7 +10,7 @@ export default function SubTitle({children}:{children:string}) {
 }
 
 const Container = styled.div`
-  font-size: 2.6rem;
+  font-size: 3.6rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   color: ${({theme})=>theme.color.text.main?theme.color.text.main:"#A1A1AA"};

@@ -13,9 +13,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    background:linear-gradient(175deg,#500dbd, #180339);
+    background-color:#500dbd;
     color: ${pageTheme.color.text.page};
     
   }

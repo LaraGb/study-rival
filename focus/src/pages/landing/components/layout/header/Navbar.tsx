@@ -36,7 +36,7 @@ const Container = styled.div`
   width: 100%;
   position: fixed;
   z-index: 1000;
-  padding: 30px 0px;
+  padding: 20px 0px;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border: none;
