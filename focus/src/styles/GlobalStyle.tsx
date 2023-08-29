@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    background-color:#500dbd;
+    background-color:black;
     color: ${pageTheme.color.text.page};
     
   }
