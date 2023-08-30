@@ -2,7 +2,10 @@
 const pageTheme = {
     color: {
       text:{
-        main:"white",
+        main:{
+          light:"white",
+          dark:"black"
+        },
         page:"white"
       },
       details:{

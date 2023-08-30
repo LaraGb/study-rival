@@ -10,8 +10,8 @@ export default function Title({children}:{children:string}) {
 }
 
 const Container = styled.div`
- font-size: 4rem;
+ font-size: 6rem;
  text-align: center;
  font-weight: bold;
- color: ${({theme})=>theme.color.text.main};
+ color: currentColor;
 `;

@@ -29,13 +29,13 @@ export default function StylizedButton({children, isBgHighlighted, onClick}:styl
 }
 
 const Container = styled.button<Omit<stylizedBttuonT,'children'>>`
-  background-color: white;
-  padding: 1.2rem 2rem;
+  background-color: black;
+  padding: 2rem 3.8rem;
   font-weight: bold;
   text-align: center;
-  font-size: 1.5rem;
-  border-radius: 50px;
-  color:black;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  color:white;
   border: none;
   cursor: pointer;
 `;

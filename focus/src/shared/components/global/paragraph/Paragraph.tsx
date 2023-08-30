@@ -18,7 +18,7 @@ export default function Paragraph({children,...styleProps}:paragraphT) {
 }
 
 const Container = styled.p<Omit<paragraphT,'children'>>`
-  max-width: 90%;
+  max-width: 92%;
   letter-spacing: 2px;
   color:${({color})=> color || 'currentColor'};
   font-size: ${({fontSize})=> fontSize || '1.4rem'};
