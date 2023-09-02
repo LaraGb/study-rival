@@ -14,7 +14,6 @@ export default function Index() {
       <About/>
       <Feature/>
       <CallToAction/>
-      <Testimonials/>
     </Layout>
   )
 }

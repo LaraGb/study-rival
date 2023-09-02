@@ -40,7 +40,7 @@ const Container = styled.div`
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border: none;
-  border-bottom: 1px solid #4e4d4d;
+  border-bottom:1px solid hsla(0, 0%, 100%, 0.1);
 `;
 
 const NavList = styled.div`
@@ -49,18 +49,20 @@ const NavList = styled.div`
 
   &>.active::after{
     background-color: ${({theme})=>theme.color.details.primary.base};
+    color: ${({ theme }) => theme.color.text.main};
   }
  
 `;
 
 const NavLink = styled(Link)`
   position: relative;
-  color: ${({ theme }) => theme.color.text.main};
-  font-weight: 600;
-  font-size: 1.6rem;
+  color: ${({theme})=>theme.color.text.main.light};
+  font-weight: 400;
+  font-size: 14px;
   padding: 1.6rem 1.8rem;
   text-transform: capitalize;
   cursor: pointer;
+ 
 
   &::after{
     content: "";

@@ -1,17 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Title({children}:{children:string}) {
+type titleT = {
+ children:React.ReactNode;
+ textAlign?:string;
+}
+
+export default function Title({children,...styleProps}:titleT) {
   return (
-    <Container>
+    <Container {...styleProps}>
       {children}
     </Container>
   )
 }
 
-const Container = styled.div`
- font-size: 6rem;
- text-align: center;
- font-weight: bold;
+const Container = styled.div<Omit<titleT,'children'>>`
+ font-size: 4.6rem;
+ text-align: ${({textAlign})=>textAlign || 'center'};
+ font-weight: 500;
  color: currentColor;
 `;

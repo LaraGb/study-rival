@@ -1,65 +1,67 @@
-import React,{useRef} from 'react';
+import React, { useRef } from 'react';
 import Column from 'shared/components/global/column/Column';
 import Paragraph from 'shared/components/global/paragraph/Paragraph';
-import Span from 'shared/components/global/span/Span';
-import StylizedButton from 'shared/components/global/stylized-button/StylizedButton';
+import Title from 'shared/components/global/title/Title';
 import WideWrapping from 'shared/components/global/wide-wrapping/WideWrapping';
 import styled from 'styled-components';
 import {motion, useScroll, useTransform} from 'framer-motion';
+import img from 'assets/background/image 115.png';
 
 export default function Index() {
-  const ref = useRef(null);
+   const refScroll = useRef(null);
+   const {scrollYProgress} = useScroll({target:refScroll});
 
-  const {scrollYProgress} = useScroll({
-    target:ref
-  })
 
-  const y = useTransform(scrollYProgress,[0,0.8],[2000,0]);
-  const scale = useTransform(scrollYProgress,[0,0.8],[0.5,1.8])
+  const y = useTransform(scrollYProgress,[0,1],[2000,-200]);
+
 
   return (
-    <Container ref={ref}>
-      <Sticky>
+    <Container ref={refScroll}>
+       <Sticky>
         <WideWrapping>
-          <Column alignItems='center'>
-             <Column maxWidth='1000px' alignItems='center' gap='2rem'>
-               <Span fontSize='8rem' fontWeight='bold'>We are always looking for new adventures</Span>
-               <Paragraph textAlign='center'>
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut sint, quidem odit quam unde ipsam ex? Soluta officia ea eum neque id ab vero maxime molestiae repellat deserunt maiores fugit, tempora error minus doloremque animi esse? Dolorum, cum?
-               </Paragraph>
-               <StylizedButton>Faça Parte</StylizedButton>
-             </Column>      
-              <Absolute>
-               <motion.div style={{y, scale}}>
-                <img src="https://ouch-cdn2.icons8.com/JPROZ2foiw9UtIuuoO0zXoIq_RZ5SQIbp7Tln6zYfWU/rs:fit:256:376/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTQx/LzBmNDk0MTVlLTA4/NzYtNDc3MC05MTUy/LTk5NmZhOTkyZWM5/NS5wbmc.png" alt="" />
-               </motion.div>
-              </Absolute>
+           <Column alignItems='center'>
+               <Column maxWidth='760px' alignItems='center'>
+                   <Title>We are always looking for new adventures</Title>
+                   <Paragraph textAlign='center'>
+                     Bem-vindo ao [Nome do Seu Site], o seu destino para uma produtividade aprimorada. Nossa equipe é apaixonada por ajudar você a tirar o máximo proveito do seu tempo e alcançar seus objetivos de maneira eficaz.
+                   </Paragraph>
+                   <Paragraph textAlign='center'>
+                     Combinamos a técnica Pomodoro com recursos inovadores para oferecer uma abordagem completa para a produtividade. Nossa missão é simplificar a gestão do tempo, ajudando-o a manter o foco, cumprir tarefas e superar desafios.
+                   </Paragraph>
+               </Column>
+               <AnimationField style={{y}}>
+                   <img src={img} alt="" />
+               </AnimationField>
           </Column>
         </WideWrapping>
-      </Sticky>
+       </Sticky>
     </Container>
   )
 }
 
 const Container = styled.div`
- position: relative;
- height: 120vh;
- color: black;
- background-color: white;
+  height: 130vh;
+  position: relative;
+  background:radial-gradient(#7605deb5, black 66%);
 `;
 
 const Sticky = styled.div`
  position: sticky;
  top: 0;
- width: 100%;
  height: 100vh;
  display: flex;
  justify-content: center;
  align-items: center;
  overflow: hidden;
-
+ 
 `;
 
-const Absolute = styled.div`
+const AnimationField = styled(motion.div)`
  position: absolute;
+ z-index: -1;
+
+
+ &>img{
+  max-width: 60rem;
+ }
 `;

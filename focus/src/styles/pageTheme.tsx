@@ -10,7 +10,7 @@ const pageTheme = {
       },
       details:{
         primary:{
-          base:"#43287b",
+          base:"#7b61ff",
           dark:"#009600"
         }
       }
@@ -21,7 +21,7 @@ const pageTheme = {
       style: "2px solid #736681",
     },
     measures:{
-       wide_wrapping:"1720px"
+       wide_wrapping:"1520px"
     },
     font: {
       small: "0.5rem",

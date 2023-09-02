@@ -4,7 +4,6 @@ import { styled } from 'styled-components';
 type paragraphT = {
   children: string;
   fontSize?: string,
-  fontWeight?: string | number;
   textAlign?:string;
   color?:string;
 }
@@ -22,8 +21,7 @@ const Container = styled.p<Omit<paragraphT,'children'>>`
   letter-spacing: 2px;
   color:${({color})=> color || 'currentColor'};
   font-size: ${({fontSize})=> fontSize || '1.4rem'};
-  font-weight: ${({fontWeight})=> fontWeight || 'normal'};
   text-align: ${({textAlign})=> textAlign || 'left'};
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 200;
 `;

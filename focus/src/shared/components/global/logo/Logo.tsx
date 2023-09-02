@@ -21,5 +21,5 @@ const Container = styled.h1`
 `;
 
 const Medium = styled.span`
-  font-weight: 200;
+  font-weight: 600;
 `;
