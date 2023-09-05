@@ -1,31 +1,29 @@
 # Study Rival
 
-## Descrição
-O Study Rival é uma plataforma inovadora que transforma o estudo em uma competição divertida. Os usuários podem definir metas de estudo,
-desafiar amigos e monitorar o progresso, bloquear sites e serem alertados caso o amigo tente acessar o site bloqueado, tudo de forma colaborativa. Esta aplicação é ideal para estudantes que desejam se manter
-motivados e melhorar sua produtividade.
+## Description
+Study Rival is an innovative platform that turns studying into a fun competition. Users can set study goals, challenge friends, monitor progress, block distracting websites, and receive alerts if a friend attempts to access a blocked site, all collaboratively. This application is ideal for students looking to stay motivated and improve their productivity.
 
-## Recursos Principais
-- Crie e gerencie suas metas de estudo.
-- Desafie seus amigos para competições de estudo.
-- Bloqueie sites de distração durante as sessões de estudo.
-- Receba alertas quando tentar acessar sites bloqueados.
-- Acompanhe seu progresso com estatísticas detalhadas.
-- Envie mensagens de incentivo aos seus amigos.
+## Key Features
+- Create and manage your study goals.
+- Challenge your friends to study competitions.
+- Block distracting websites during study sessions.
+- Receive alerts when attempting to access blocked sites.
+- Track your progress with detailed statistics.
+- Send encouraging messages to your friends.
 
-## Tecnologias Utilizadas
-- Frontend: React.js com TypeScript
-- Backend: Node.js com Express
-- Banco de Dados: PostgreSQL 
-- Docker para ambiente de desenvolvimento
-- Autenticação com JSON Web Tokens (JWT)
+## Technologies Used
+- Frontend: React.js with TypeScript
+- Backend: Node.js with Express
+- Database: PostgreSQL
+- Docker for development environment
+- Authentication with JSON Web Tokens (JWT)
 
-## Como Executar Localmente
-1. Clone este repositório.
-2. Navegue para a pasta do projeto.
-3. Instale as dependências com `npm install`.
-4. Configure as variáveis de ambiente (veja `.env.example`).
-5. Inicie o servidor de desenvolvimento com `npm run dev`.
-6. Abra o aplicativo em `http://localhost:3000` no seu navegador.
+## How to Run Locally
+1. Clone this repository.
+2. Navigate to the project folder.
+3. Install dependencies with `npm install`.
+4. Configure environment variables (see `.env.example`).
+5. Start the development server with `npm run dev`.
+6. Open the application at `http://localhost:3000` in your browser.
 
 
