@@ -10,7 +10,7 @@ const pageTheme = {
     details: {
       primary: {
         base: "#7b61ff",
-        dark: "#009600",
+        dark: "#389BF2",
       },
       gray:{
         light:"#EDEFF2"
@@ -26,7 +26,7 @@ const pageTheme = {
   },
   border: {
     radius: "15px",
-    style: "2px solid #736681",
+    style: "3px solid #EDEFF2",
   },
   measures: {
     wide_wrapping: "1640px",

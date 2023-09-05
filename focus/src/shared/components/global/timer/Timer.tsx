@@ -37,8 +37,12 @@ const TimerContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  *::before{
+  *::after{
     content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #225079;
   }
 
 

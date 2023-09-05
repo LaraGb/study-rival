@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import TopBar from './top-bar/TopBar';
 import SideBar from './side-nav-bar/Index';
-import RowToColumn from '../global/row-to-column/RowToColumn';
 import TimerBar from './timer-bar/Index';
 import Container from '../global/container/Container';
 
@@ -14,12 +13,12 @@ export default function PageLayout({children}:{children:React.ReactNode}) {
         <SideBar/>
           <div style={{flex:1}}>
            <Container>
-            <RowToColumn>
+            <CurrentRouterContainer>
               <TimerBar/>
-              <div>
+              <div style={{flex:1}}>
                 {children}
               </div>
-            </RowToColumn>
+            </CurrentRouterContainer>
            </Container>
          </div>
       </Main>
@@ -38,4 +37,9 @@ const Main = styled.div`
  flex: 1;
  display: flex;
  padding:2.6rem 0px;
+`;
+
+const CurrentRouterContainer = styled.div`
+ display: flex;
+ gap: 8vw;
 `;
