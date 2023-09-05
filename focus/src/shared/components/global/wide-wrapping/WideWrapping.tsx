@@ -14,4 +14,5 @@ const Container = styled.div`
   max-width: ${({theme})=>theme.measures.wide_wrapping};
   margin-left: auto;
   margin-right: auto;
+  padding: 0rem 2rem;
 `;

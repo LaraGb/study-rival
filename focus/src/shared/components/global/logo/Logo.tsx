@@ -5,10 +5,7 @@ import styled from 'styled-components';
 export default function Logo() {
   return (
     <Container>
-      Focus 
-      <Medium>
-        Together
-      </Medium>
+      Logo Here
     </Container>
   )
 }
@@ -16,10 +13,8 @@ export default function Logo() {
 
 const Container = styled.h1`
   font-weight:600;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: ${({theme})=> theme.color.text.main};
 `;
 
-const Medium = styled.span`
-  font-weight: 600;
-`;
+

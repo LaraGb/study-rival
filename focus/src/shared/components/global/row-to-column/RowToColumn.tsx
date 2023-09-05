@@ -15,7 +15,4 @@ const Container = styled.div`
    align-items: center;
    gap: 6rem;
 
-   &>*{
-    width: 50%;
-  }
 `;
