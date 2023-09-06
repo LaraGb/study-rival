@@ -14,9 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    color: ${pageTheme.color.text.page};
-    
+    font-size: 1.2rem;  
   }
 
   a{

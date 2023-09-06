@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
+ width?:string;
  height?:string;
  children:React.ReactNode;
  justifyContent?: string;
@@ -20,6 +21,7 @@ const Row = ({children,...styleProps}:Props) => {
 }
 
 const Container = styled.div<Omit<Props,'children'>>`
+  width: ${({width})=> width || 'auto'};
   height: ${({height})=> height || 'auto'};
   padding: ${({padding})=> padding || "0px"};
   display: flex;

@@ -1,72 +1,53 @@
-import React from 'react';
-import Column from 'shared/components/global/column/Column';
-import Span from 'shared/components/global/span/Span';
-import StylizedButton from 'shared/components/global/stylized-button/StylizedButton';
-import styled from 'styled-components';
-import Task from './task/Index';
+import styled from "styled-components";
+import TableField from "shared/components/global/table-field/TableField";
+import { Box } from "@chakra-ui/react";
+import Border from "shared/components/global/border/Border";
+import Row from "shared/components/global/row/Row";
+import Span from "shared/components/global/span/Span";
+import StylizedButton from "shared/components/global/stylized-button/StylizedButton";
+import Column from "shared/components/global/column/Column";
 
-export default function Index() {
+const header = ['status','task Name', 'current timer', 'timer'];
+const body = [{
+    id:0,
+    content:['check', 'namee', '19:00', '20:00']
+},
+{
+    id:0,
+    content:['check', 'namee', '19:00', '20:00']
+},
+{
+    id:0,
+    content:['check', 'namee', '19:00', '20:00']
+}
+];
+
+export default function Index({checked}:({checked?:boolean})) {
   return (
-    <Container>
-      <Column gap='4rem'>
-        <Header>
-          <Span fontSize='1.6rem' fontWeight='bold'>Work Hard</Span>
-          <StylizedButton>Add Task</StylizedButton>
-        </Header>
-        <TableField>
-          <table>
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Task Name</th>
-                <th>Duration</th>
-                <th>Duration Goal</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                 Array(6).fill(0).map((_,key)=>( 
-                  <Task key={key}/>
-                ))
-              }
-            </tbody>
-          </table>
-        </TableField>
+    <Box bg={'white'} padding={'0rem 2rem 8rem 2rem'}>
+      <Column gap="3rem">
+       <Border padding="2.3rem 2rem" borderWidth="0px 0px 3px 0px">
+        <Row justifyContent="space-between" alignItems="center">
+           <Span>Work Hard</Span>
+           <StylizedButton>Lorem, ipsum.</StylizedButton>
+        </Row>
+      </Border>
+      <TableField headerlabels={header} bodyContent={body}/>
       </Column>
-    </Container>
+    </Box>
   )
 }
 
-const Container = styled.div`
- background-color: white;
- padding: 2rem 2rem 6rem 2rem;
- color:${({theme})=>theme.color.text.main.dark};
-`;
 
-const Header = styled.div`
- display: flex;
- justify-content: space-between;
- align-items: center;
-`;
 
-const TableField = styled.table`
- border: ${({theme})=> theme.border.style};
- border-radius: 12px;
+const CheckBtn = styled.button<{isChecked?:boolean}>`
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
 
-  &>table{
-    width: 100%;
-    border-collapse: collapse;
-  &>thead tr th{
-    padding: 2.8rem 0rem;
-    font-size: 1.4rem;
-    border-bottom: ${({theme})=> theme.border.style};
-    text-align: center;
-  }
-
-  &>tbody tr td{
-    padding: 2.2rem 0rem;
-    border-top: ${({theme})=> theme.border.style};
-    text-align: center;
-  }
-  }
 `;

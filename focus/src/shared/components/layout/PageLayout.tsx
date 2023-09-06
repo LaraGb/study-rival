@@ -4,6 +4,7 @@ import TopBar from './top-bar/TopBar';
 import SideBar from './side-nav-bar/Index';
 import TimerBar from './timer-bar/Index';
 import Container from '../global/container/Container';
+import breakPoints from 'styles/breakPoints';
 
 export default function PageLayout({children}:{children:React.ReactNode}) {
   return (
@@ -37,9 +38,14 @@ const Main = styled.div`
  flex: 1;
  display: flex;
  padding:2.6rem 0px;
+
 `;
 
 const CurrentRouterContainer = styled.div`
  display: flex;
  gap: 8vw;
+
+ @media (max-width:${breakPoints.xl}) {
+   flex-direction: column;
+ }
 `;

@@ -11,7 +11,7 @@ export default function WideWrapping({
 
 const Container = styled.div`
   width: 100%;
-  max-width: ${({theme})=>theme.measures.wide_wrapping};
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 0rem 2rem;

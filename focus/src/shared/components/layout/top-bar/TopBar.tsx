@@ -6,10 +6,12 @@ import Row from 'shared/components/global/row/Row';
 import pageIcons from 'shared/utils/pageIcons';
 import styled from 'styled-components';
 import WideWrapping from 'shared/components/global/wide-wrapping/WideWrapping';
+import { Box } from '@chakra-ui/react';
+import Border from 'shared/components/global/border/Border';
 
 export default function TopBar() {
   return (
-    <Container>
+    <Border borderWidth='0px 0px 3px 0px' padding='1.8rem 0rem'>
       <WideWrapping>
       <Row justifyContent='space-between' alignItems='center'>
         <Row gap='6rem' alignItems='center'>
@@ -27,18 +29,13 @@ export default function TopBar() {
         </Row>
       </Row>
       </WideWrapping>
-    </Container>
+    </Border>
   )
 }
 
-const Container = styled.div`
-  width: 100%;
-  padding: 2rem 8rem ;
-  border-bottom: 3px solid ${({theme})=> theme.color.details.gray.light};
-`;
 
 const NavLink = styled(Link)`
-  font-size: ${({theme})=> theme.fontSize.text_lg};
   font-weight: 600;
+  font-size: 1.6rem;
 
 `;

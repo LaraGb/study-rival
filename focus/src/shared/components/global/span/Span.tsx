@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-
+import {Text} from '@chakra-ui/react';
 
 type spanT = {
    children: React.ReactNode;
@@ -8,7 +8,7 @@ type spanT = {
    backgroundColor?:string;
    padding?:string;
    fontSize?:string;
-   fontWeight?:string;
+   fontWeight?:string | number;
    margin?:string;
 }
 
@@ -20,7 +20,7 @@ export default function Span({children,...stylePros}:spanT) {
   )
 }
 
-const Container = styled.span<Omit<spanT,'children'>>`
+const Container = styled(Text)<Omit<spanT,'children'>>`
   margin: ${({margin})=>margin || '0'};
   padding:${({padding})=>padding };
   font-size: ${({fontSize})=>fontSize || '1.4rem'};

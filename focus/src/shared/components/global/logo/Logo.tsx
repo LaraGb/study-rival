@@ -1,20 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {Box} from '@chakra-ui/react';
 
 export default function Logo() {
   return (
-    <Container>
+    <Box color='black' fontSize={'2.2rem'} fontWeight={'bold'}>
       Logo Here
-    </Container>
+    </Box>
   )
 }
 
 
-const Container = styled.h1`
-  font-weight:600;
-  font-size: 2rem;
-  color: ${({theme})=> theme.color.text.main};
-`;
 
 
